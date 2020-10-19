@@ -1,7 +1,12 @@
 # Cybersecurity Log
 This Spark application cleans and visualizes sample Splunk log data from web server.
 
-The data was been parsed from a textfile, the schema was defined, columns were merged and renamed, then the data was filtered to show the occurrence of failed passwords.
+## Steps 
+-The data was parsed from a textfile
+-The schema was defined
+-Columns were merged and renamed
+-The data was filtered to show the occurrence of failed passwords
+-Visualized in Tableau
 
 ## Data Visualization
 <img src= >
