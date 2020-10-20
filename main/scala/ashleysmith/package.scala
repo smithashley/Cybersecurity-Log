@@ -37,11 +37,18 @@ package ashleysmith {
         .withColumn("reason", (concat_ws(" ", (col("r1")), (col("r2"))))).drop("r1").drop("r2")
         .withColumn("who", (concat_ws(" ", (col("f1")), (col("f2")), (col("f3"))))).drop("f1").drop("f2").drop("f3")
 
-      val finalDF = mergeDF.filter(col("reason") rlike "password")
+      val filterDF = mergeDF.filter(col("reason") rlike "password")
+
+      val fixdupesDF = filterDF.withColumn("reason", when(col("reason").equalTo("failed password"), "Failed password").otherwise(col("reason")))
+
+      val finalDF = fixdupesDF.groupBy("date").pivot("reason").count()
 
       //Write to csv
-      finalDF.write.option("header", "true")
-        .csv("/Users/ashleysmith/Downloads/passwords")
+      finalDF
+        .repartition(1)
+        .write
+        .option("header", "true")
+        .csv("/Users/ashleysmith/Downloads/password-count")
     }
   }
 
