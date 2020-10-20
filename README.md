@@ -12,7 +12,7 @@ This Spark application cleans and visualizes sample Splunk log data from web ser
 ## Data Visualization
 ![](https://github.com/smithashley/cybersecuritylog/blob/main/images/with%20chart.png)
 
-Shows persistent cybersecurity threats are from day to day. 
+Shows how persistent cybersecurity threats are from day to day. 
 
 ## Data Pipeline
-![](https://github.com/smithashley/cybersecuritylog/blob/main/images/CSLog.jp2)
+![](https://github.com/smithashley/cybersecuritylog/blob/main/images/CSLog.png)
