@@ -1,15 +1,18 @@
 # Cybersecurity Log
 This Spark application cleans and visualizes sample Splunk log data from web server.
 
+
 ## Steps 
 - The data was parsed from a textfile
 - The schema was defined
 - Columns were merged and renamed
 - The data was filtered to show the occurrence of failed passwords
-- Visualized in Tableau
+- Pivoted dataframe to show counts 
 
 ## Data Visualization
-<img src= >
+![](https://github.com/smithashley/cybersecuritylog/blob/main/images/with%20chart.png)
+
+Shows persistent cybersecurity threats are from day to day. 
 
 ## Data Pipeline
-<img src= "https://github.com/smithashley/cybersecuritylog/blob/main/CSLog.jp2">
+![](https://github.com/smithashley/cybersecuritylog/blob/main/images/CSLog.png)
