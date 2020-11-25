@@ -7,7 +7,7 @@ This Spark application cleans and visualizes sample Splunk log data from a web s
 - Columns were merged and renamed
 - The data was filtered to show the occurrence of accepted and failed passwords
 - Pivoted the data to show counts 
-- Repartition to a single file
+- Repartitioned to a single file
 - Loaded the data as a .csv file
 
 ## Data Visualization
