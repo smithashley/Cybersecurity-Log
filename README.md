@@ -1,5 +1,5 @@
 # Cybersecurity Log
-This Spark application cleans and visualizes sample Splunk log data from a web server.
+This Spark application cleans and visualizes sample log data from a web server.
 - Data is available here: https://docs.splunk.com/Documentation/Splunk/6.5.0/SearchTutorial/GetthetutorialdataintoSplunk
 
 ## Steps
