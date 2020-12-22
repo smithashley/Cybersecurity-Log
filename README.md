@@ -4,7 +4,7 @@ This Spark application cleans and visualizes sample log data from a web server.
 
 ## Steps
 - The data was parsed from a log file
-- Columns were merged and renamed
+- Columns were renamed
 - The data was filtered to show the occurrence of accepted and failed passwords
 - Pivoted the data to show counts 
 - Repartitioned to a single file
