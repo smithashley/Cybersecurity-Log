@@ -1,4 +1,4 @@
-# Cybersecurity Log
+# Log Visualization
 
 ![](https://github.com/smithashley/Log-Visualization/blob/main/images/CSLog.png)
 
